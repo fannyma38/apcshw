@@ -24,4 +24,6 @@ public class Basechar {
     public void setHealth(int i){
 	health = i;
     }
+    this.setName(name);
+    name = "Usagi";
 }
