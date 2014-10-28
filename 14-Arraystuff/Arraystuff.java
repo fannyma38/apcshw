@@ -1,41 +1,26 @@
-import java.util.*;
-
-public class Arraystuff {
-    /*-------------------- Instance Variables --------------------*/
-
-    private int[] a;
-    private Random rnd;
-    /* by making a variable final we can't change
-       the value after the initial asssignment 
-    */
-    public final int final_example = 123;
-
-    /*-------------------- Constructors --------------------*/
-    
-    public Arraystuff(int n){
-	rnd = new Random();
-	a = new int[n];
-	for (int i=0;i<a.length;i++){
-	    a[i] = 75+rnd.nextInt(76);
+public class Arraystuff{
+    public int find(int[] ar, int n){
+	int ret;
+	for (int c = ar.length-1; c >= 0; c--){
+	    if (ar[c] = n){
+		ret = c;
+	    }
+	    if (c =0 && (ar[0] !=n))){
+		    ret = -1;
 	}
-    }
-    
-    public Arraystuff() {
-	this(100);
+	return ret; 
     }
 
-    /*-------------------- Methods --------------------*/
-    public String toString(){
-	String s="";
-	for (int i=0;i<a.length;i++){
-	    s=s+a[i]+", ";
+    public int max(int[] ar){
+	int comp = ar[0]
+	for (int c = 1;c<ar.length;c++){
+	    if (ar[c] > comp){
+		comp = ar[c];
+	    }
 	}
-	return s;
-    }
-    public static void main(String[] args) {
-	Arraystuff as = new Arraystuff();
-	System.out.println(as);
-	
-	
-    }
+	return comp
+	    }
+	    
+    
 }
+	
