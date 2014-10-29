@@ -83,4 +83,15 @@ public boolean tripleUp(int[] nums) {
 			 }
 	    }
     }
+
+    public int freq(int[] nums, int i){
+        int ret= 0;
+	for (int c = 0; c < nums.length; c++){
+	    if (nums[c] == i){
+		ret+=1;
+	    }
+	}
+	return ret;
+    }
+ 
 }
