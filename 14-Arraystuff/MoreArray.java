@@ -43,21 +43,17 @@ public class MoreArray{
 	return nums;     
     }
     
-public boolean tripleUp(int[] nums) {
-  int c =0;
-  while (c < nums.length-2){
-    int b = nums[c] +1;
-    int d = nums[c] + 2;
-    if (b == nums[c+1] && d ==nums[c+2]){
-    return true;
-    } else {
-	if (c = nums.length-3){
-	    return false;
+    public boolean tripleUp(int[] nums) {
+	int[] ans = new int[3];
+	if (nums.length==3) {return (nums[0]==nums[1]-1 && nums[0]==nums[2]-2);}
+	for (int i = 0; i< nums.length-2;i++) {
+	    ans[0] = nums[i];
+	    ans[1] = nums[i+1];
+	    ans[2] = nums[i+2];
+	    if (ans[0]==ans[1]-1 && ans[0]==ans[2]-2) {return true;}
 	}
-	c++;
+	return false;
     }
-  }
-}
     
     public int[] seriesUp(int n) {
 	int[] a = new int[n*(n+1)/2];
@@ -69,19 +65,40 @@ public boolean tripleUp(int[] nums) {
 	    }
 	}
     }
-
+    /*----------------------------------*/
 
     public boolean canBalance(int[] nums) {
 	int half = nums.length / 2
 	    for (int c =0; c < half ; c++){
     
     
-		for (int k=half; k < (nums.length-1); k++{
-  
-		    }
-	   
-			 }
+	    }public int sumFront(int[] nums , int i) {
+	int ans = 0;
+	if (i==0) {return nums[i];}
+	else{ for (int place = 0 ; place<=i;place++) {
+		ans +=nums[place];
 	    }
+	}
+	return ans;
+    }
+    public int sumBack(int[] nums , int i) {
+	int ans = 0;
+	if (i == nums.length-1) {return nums[i];}
+	else { for (int place = i+1; place<nums.length;place++)
+		ans +=nums[place];
+	}
+	return ans;
+    }
+   
+
+ public boolean canBalance(int[] nums) {
+	if (nums.length==1) {return false;}
+	for (int i = 0;i<nums.length;i++) {
+	    if (sumFront( nums , i)==sumBack( nums , i)) {
+		return true;
+	    }
+	}
+	return false;
     }
 
     public int freq(int[] nums, int i){
