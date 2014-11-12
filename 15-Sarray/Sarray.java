@@ -59,6 +59,13 @@ public class Sarray {
     public int remove(int index){
         // removes the item at index i
         // returns the old value
+	Eexample ee =new Eexample();
+	try{
+	    ee.etest(10);
+	    System.out.println("A+ Good job");
+	} catch (Exception e){
+	    System.out.println("index requested to be removed does not exist");}
+     
 	int k = 0;
 	for (int c=0; c< ret.length; c++ ){
 	    if (c = index){
