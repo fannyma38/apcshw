@@ -1,7 +1,7 @@
-public class Sarray {
+public class OSA extends SuperArray{
     String[] data;//the larger array aka the entire data
     int last;// will at most be the length of data set
-    public Sarray() {
+    public void Sarray() {
 	// set up the initial instance variables
 	data = new String[16];
 	// Set default value to 0
@@ -86,7 +86,6 @@ public class Sarray {
 		buffer[i] = data[i];
 	    }
 	    else if (i == index) {
-		//buffer[i] = obj;
 		toReturn = buffer[i];
 	    }
 	    else {
