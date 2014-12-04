@@ -1,4 +1,4 @@
-public class OSA extends SuperArray{
+public class OSA extends Sarray{
 	String[] data;//the larger array aka the entire data
     int last;// will at most be the length of data set
 
