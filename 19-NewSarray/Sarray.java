@@ -24,7 +24,7 @@ public class Sarray {
 	ret = new int[data.length+1];
 	booleon found = false;
 	for (int c =0; c< data.length && found== false; c++){
-	    if (c == index){
+	    if (c == index){ 
 		ret[index] = i;
 		for (int k = c +1 ; k < ret.length; k++){
 		    ret[k] = data[c];
