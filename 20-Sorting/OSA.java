@@ -131,14 +131,34 @@ public class OSA extends Sarray{
 		}
 		else if (data[i+1].substring(i,i+1).compareTo(data[i].substring(i,i+1)) >1){
 		    String t = data[i]}
-	    c++;
+		c++;
+	    }
+	    data = ret;
 	}
-	data = ret;
-    }
+	
+	public void iSelect(){
+	    String[] ret = new String[size()];
+	    int i = 0;
+	    int small=0;
+	    int a =size();
+	    for (i =0; i< a; i++){
+		small=data[i];
+		for (int j=0; j<a; j++){
+		    if (data[j] < data[small]){
+			small = j;
+		    }
+		}
+		if (i != small){
+		    int k = data[i];
+		    data[i] = data[small];
+		    items[small] = k;
+		}
+	    }
+	}
 
-    public static void main(String[] args){
-	Sarray k = new Sarray();
-    }
+	public static void main(String[] args){
+	    Sarray k = new Sarray();
+	}
 
 
 
