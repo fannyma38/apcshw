@@ -118,14 +118,5 @@ public class OSA extends SuperArray{
 		data = buffer;
 		return toReturn;
     	}
-    public String compare(String a,String b){
-	if (a.equals(b)) {return a;}
-        
-	for (int i = 0;i<b.length();i++) {
-	    if (b.substring(i,i+1).compareTo(a.substring(i,i+1)) <1){return b;}
-	    else if (b.substring(i,i+1).compareTo(a.substring(i,i+1)) >1){return a;}
-	    
-	    
-	}return "";
     }
 }
