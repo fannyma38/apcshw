@@ -128,25 +128,4 @@ public class OSA extends SuperArray{
 	    
 	}return "";
     }
-
-    public void toSort() {
-	String[] ans = new String[size()];
-	int i = 0;
-	int x =size();
-	while (i+1<x) {
-	    String temp = compare(data[i] , data[i+1]);
-	    ans
-
-	    i++;
-	}
-	data = ans;
-    }
-
-    public static void main(String[] args){
-	Sarray k = new Sarray();
-    }
-
-
-
-
 }
