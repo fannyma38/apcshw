@@ -118,35 +118,5 @@ public class OSA extends SuperArray{
 		data = buffer;
 		return toReturn;
     	}
-    public String compare(String a,String b){
-	if (a.equals(b)) {return a;}
-        
-	for (int i = 0;i<b.length();i++) {
-	    if (b.substring(i,i+1).compareTo(a.substring(i,i+1)) <1){return b;}
-	    else if (b.substring(i,i+1).compareTo(a.substring(i,i+1)) >1){return a;}
-	    
-	    
-	}return "";
     }
-
-    public void toSort() {
-	String[] ans = new String[size()];
-	int i = 0;
-	int x =size();
-	while (i+1<x) {
-	    String temp = compare(data[i] , data[i+1]);
-	    ans
-
-	    i++;
-	}
-	data = ans;
-    }
-
-    public static void main(String[] args){
-	Sarray k = new Sarray();
-    }
-
-
-
-
 }
