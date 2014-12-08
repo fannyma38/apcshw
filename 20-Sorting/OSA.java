@@ -177,6 +177,15 @@ public class OSA extends Sarray{
 
 	public static void main(String[] args){
 	    Sarray k = new Sarray();
+	    k.add("why");
+	    k.add("are");
+	    k.add("you");
+	    k.add("stressing");
+	    k.add("me");
+	    long startTime = System.currentTimeMillis();
+	    k.ibub();
+	    long endTime = System.currentTimeMillis();
+	    System.out.println("That took " + (endTime - startTime) + " milliseconds");
 	}
 
 
