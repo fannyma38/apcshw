@@ -135,7 +135,8 @@ public class OSA extends Sarray{
 	    }
 	    data = ret;
 	}
-	
+	//I feel like the insertion method would be a better because it does not grow exponentially like the selection sort method does. Bubblesort as well
+	// appears to me as an exponential method. It is quite similat to the selection sort. So, that leaves the insertion method as the best method.
 	public void iSelect(){
 	    String[] ret = new String[size()];
 	    int i = 0;
@@ -155,6 +156,24 @@ public class OSA extends Sarray{
 		}
 	    }
 	}
+
+
+	public void ibub(){
+	    int a = size();
+	    int finish;
+	    for (int i = 0; i < a; i++){
+		for (int j=0, finish = a-1; j< finish; j++){
+		    if (data[j] > data[j+1]){
+			int k = data[j];
+			data[j] = data[j+1];
+			data[j+1] = k;
+		    }
+		}
+	    }
+	}
+	//The bubble sort method is the most inefficient method of them all
+	//It takes the most time.
+	    
 
 	public static void main(String[] args){
 	    Sarray k = new Sarray();
