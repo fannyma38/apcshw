@@ -1,3 +1,9 @@
 https://github.com/lulublue98/StopMotion/tree/master/Project
 
-First I would like to commend your project on making this idea work. It is a very creative and interesting idea! In the Canvas file in lines 94-97 it is really neat that you made it that lines can be removed and figured to add a mechnism similar to that of an eraser. Also from looking at your Gui file, you have many components to your user interface which is pretty neat. I see there is a toolbox with color panels and a grey scale. I also like that in Canvas file line 119 you made sure to warn the user that an image could not be saved instead of assuming the file would always be saved. I can imagine it would be really annoying to think that I finished making my animation only to find nothing was saved. 
+First I would like to commend your project on making this idea work. It is a very creative and interesting idea! 
+In the Canvas file in lines 94-97 it is really neat that you made it that lines can be removed and figured to add a 
+mechnism similar to that of an eraser. Also from looking at your Gui file, you have many components to your user 
+interface which is pretty neat. I see there is a toolbox with color panels and a grey scale. I also like that in
+Canvas file line 119 you made sure to warn the user that an image could not be saved instead of assuming the file
+would always be saved. I can imagine it would be really annoying to think that I finished making my animation only
+to find nothing was saved. 
